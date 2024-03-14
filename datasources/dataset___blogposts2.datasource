@@ -1,0 +1,26 @@
+SCHEMA >
+    `title` String,
+    `slug` String,
+    `collection_id` String,
+    `item_id` String,
+    `created_on` String,
+    `updated_on` String,
+    `published_on` String,
+    `image` String,
+    `subtitle` String,
+    `author` String,
+    `categories` String,
+    `date_published` String,
+    `content` String,
+    `social_share_image` String,
+    `reviewed` String,
+    `to_be_reviewed` String,
+    `hide_cover_image_inside_blogpost_page` String,
+    `meta_title` String,
+    `meta_description` String,
+    `canonical_url` String,
+    `random` Float32,
+    `featured` Int16
+
+ENGINE MergeTree
+ENGINE_SORTING_KEY title, meta_description, canonical_url, featured
